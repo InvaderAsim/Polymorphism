@@ -8,6 +8,8 @@ public class COSC113 extends Course{
 
     Student[] students;
 
+    private String duration;
+
     COSC113(){
         this.syllabus = "Java";
         this.coding_language = "Java";
@@ -18,12 +20,23 @@ public class COSC113 extends Course{
         this.name = "COSC113";
 
     }
+
+    public void Set_Duration(String duration){
+        this.duration = duration;
+
+    }
+
+    public String Get_Duration(){
+        return this.duration;
+    }
+
+
     // Parent class Constructors are not inherited, but can be invoked/called
     COSC113(int course_number, int credit, String name){
         // super () will invoke  the parent class's default constructor - course()
         // super();
 
-        super(course_number, credit, name);
+        super();
         this.syllabus = "Java";
         this.coding_language = "Java";
         this.i1 = null;

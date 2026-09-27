@@ -1,3 +1,5 @@
+
+
 public class Main{
 
 
@@ -35,15 +37,17 @@ public class Main{
 
         BSU_Member[] members = new BSU_Member[10];
 
-        BSU_Member b1, b2;
+        BSU_Member b1, b2, b3, b4, b5, b6, b7, b8, b9, b10;
         b1 = new Student();
         b2 = new Instructor();
 
         members[0] = b1;
         members[1] = b2;
 
-        for (int j = 2; j < 10; j++) {
-            members[j] = new BSU_Member();
+        for (int j = 0; j < 11; j++) {
+           while(j > 7) members[j] = new Instructor();
+           while(j > 4)members[j] = new Student();
+           while(j > 1)members[j] = new BSU_Member();
         }
 
         for (int j = 0; j < 10; j++){
